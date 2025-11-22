@@ -30,8 +30,6 @@ Implementa y visualiza los siguientes conceptos:
 
 El sistema está completamente orquestado con Docker Compose.
 
-
-
 * **Orquestación:** Docker & Docker Compose
 * **Broker de Mensajería:** Mosquitto (Protocolos MQTT y WebSockets)
 * **Base de Datos:** InfluxDB
@@ -47,25 +45,26 @@ El sistema está completamente orquestado con Docker Compose.
 
 Se requiere tener **Docker** y **Docker Compose** instalados.
 
-1.  **Construir y Ejecutar:**
-    En la raíz del proyecto, ejecuta el siguiente comando. Esto construirá las imágenes de Node.js, descargará las de Mosquitto, InfluxDB y Nginx, y levantará todos los servicios.
+1. **Construir y Ejecutar:**
+   En la raíz del proyecto, ejecuta el siguiente comando. Esto construirá las imágenes de Node.js, descargará las de Mosquitto, InfluxDB y Nginx, y levantará todos los servicios.
 
     ```bash
     docker-compose up --build
     ```
 
-2.  **Acceder al "Centro de Mando":**
-    Una vez que los contenedores estén corriendo, abre tu navegador web y ve a:
+2. **Acceder al "Centro de Mando":**  
+    Una vez que los contenedores estén corriendo, abre tu navegador web y ve a:  
     `http://localhost:8080`
 
-3.  **Acceder a InfluxDB (Opcional):**
+3. **Acceder a InfluxDB (Opcional):**  
     Puedes explorar los datos almacenados en InfluxDB en `http://localhost:8086`.
+
     * **Usuario:** `admin`
     * **Contraseña:** `password123`
     * **Organización (Org):** `utp`
     * **Bucket:** `sensors`
 
-4.  **Detener el Sistema:**
+4. **Detener el Sistema:**  
     Para detener y eliminar todos los contenedores y volúmenes, presiona `Ctrl+C` en la terminal y luego ejecuta:
 
     ```bash
